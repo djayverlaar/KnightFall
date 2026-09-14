@@ -1,0 +1,38 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{json,yml,yaml}]
+indent_size = 2
+
+[*.cs]
+csharp_new_line_before_open_brace = all
+csharp_prefer_braces = true:warning
+
+dotnet_naming_rule.private_fields.symbols = private_fields
+dotnet_naming_rule.private_fields.style = underscored_camel_case
+dotnet_naming_rule.private_fields.severity = warning
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+dotnet_naming_style.underscored_camel_case.required_prefix = _
+dotnet_naming_style.underscored_camel_case.capitalization = camel_case
+
+dotnet_naming_rule.types.symbols = types
+dotnet_naming_rule.types.style = pascal_case
+dotnet_naming_rule.types.severity = warning
+dotnet_naming_symbols.types.applicable_kinds = class, struct, enum
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_rule.methods.symbols = methods
+dotnet_naming_rule.methods.style = pascal_case
+dotnet_naming_rule.methods.severity = warning
+dotnet_naming_symbols.methods.applicable_kinds = method

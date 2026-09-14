@@ -1,0 +1,35 @@
+# Unity-generated local data (Unity project lives at repository root)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Bb]uild/
+/[Bb]uilds/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Aa]ssets/AssetStoreTools*
+# IDE-generated files
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+sysinfo.txt
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+# Local secrets
+.env
+.env.*
+!.env.example
