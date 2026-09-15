@@ -1,4 +1,5 @@
-# Unity-generated local data (Unity project lives at repository root)
+# Unity-generated local data
+# Unity project lives at repository root
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -9,7 +10,12 @@
 /[Mm]emoryCaptures/
 /[Rr]ecordings/
 /[Aa]ssets/AssetStoreTools*
+
+# Local Unity tooling settings
+/ProjectSettings/ProjectAuditorSettings.asset
+
 # IDE-generated files
+/.vsconfig
 .vs/
 .idea/
 .vscode/
@@ -25,10 +31,12 @@
 *.pdb
 *.mdb
 sysinfo.txt
+
 # OS files
 .DS_Store
 Thumbs.db
 Desktop.ini
+
 # Local secrets
 .env
 .env.*
