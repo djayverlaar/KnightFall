@@ -11,8 +11,6 @@
 /[Rr]ecordings/
 /[Aa]ssets/AssetStoreTools*
 
-# Local Unity tooling settings
-/ProjectSettings/ProjectAuditorSettings.asset
 
 # IDE-generated files
 /.vsconfig
