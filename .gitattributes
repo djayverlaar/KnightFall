@@ -1,27 +1,63 @@
+# Normalize text files across Windows and other operating systems.
 * text=auto
+
+# Code and documentation.
 *.cs text eol=lf
 *.md text eol=lf
+*.txt text eol=lf
 *.json text eol=lf
+*.xml text eol=lf
 *.yml text eol=lf
 *.yaml text eol=lf
+
+# Unity text files.
 *.meta text eol=lf
 *.unity text eol=lf
 *.prefab text eol=lf
 *.mat text eol=lf
 *.anim text eol=lf
 *.controller text eol=lf
+*.overrideController text eol=lf
 *.asmdef text eol=lf
+*.asmref text eol=lf
 *.inputactions text eol=lf
-# Ordinary binary assets. Unity .asset files can be text OR binary:
-# leave .asset on automatic detection.
+*.shader text eol=lf
+*.compute text eol=lf
+*.shadergraph text eol=lf
+*.shadersubgraph text eol=lf
+*.uxml text eol=lf
+*.uss text eol=lf
+*.vsconfig text eol=lf
+
+# Unity .asset files can be text or binary.
+# Normalize only the files Git recognizes as text.
+*.asset text=auto eol=lf
+
+# Ordinary binary images and compressed audio.
 *.png binary
 *.jpg binary
 *.jpeg binary
+*.gif binary
 *.ogg binary
 *.mp3 binary
-# Large source art / uncompressed audio. Install Git LFS before first commit.
+
+# Large source artwork.
 *.[pP][sS][dD] filter=lfs diff=lfs merge=lfs -text
+*.[pP][sS][bB] filter=lfs diff=lfs merge=lfs -text
 *.[kK][rR][aA] filter=lfs diff=lfs merge=lfs -text
+*.[tT][iI][fF] filter=lfs diff=lfs merge=lfs -text
+*.[tT][iI][fF][fF] filter=lfs diff=lfs merge=lfs -text
+
+# Large uncompressed audio.
 *.[wW][aA][vV] filter=lfs diff=lfs merge=lfs -text
 *.[fF][lL][aA][cC] filter=lfs diff=lfs merge=lfs -text
+*.[aA][iI][fF][fF] filter=lfs diff=lfs merge=lfs -text
+
+# Large video files.
 *.[mM][pP]4 filter=lfs diff=lfs merge=lfs -text
+*.[mM][oO][vV] filter=lfs diff=lfs merge=lfs -text
+*.[mM][kK][vV] filter=lfs diff=lfs merge=lfs -text
+
+# Large 3D source files.
+*.[fF][bB][xX] filter=lfs diff=lfs merge=lfs -text
+*.[bB][lL][eE][nN][dD] filter=lfs diff=lfs merge=lfs -text
