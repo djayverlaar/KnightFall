@@ -21589,8 +21589,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f8a62732bd6ab44af3784f0fc8770b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 15
+  moveSpeed: 5
+  facingDirection: 1
   rb: {fileID: 1805254885}
+  anim: {fileID: 1805254890}
 --- !u!95 &1805254890
 Animator:
   serializedVersion: 7
